@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    height: 400px; /* Adjust this to control the height of the map */
+    width: 600px;  /* Adjust this to control the width of the map */
+    border: 2px solid black; /* Black border around the map container */
+    margin: 20 auto; /* Center the map horizontally */
+    background-color: rgb(242, 238, 238); /* Grey background */
+    position: relative;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    border: 2px solid black; /* Ensure the map has a black border */
+    background-color: #f4f4f4;
+    box-sizing: border-box; /* Include padding/border in element's total width/height */
+    position: relative;
+}
+
+
+
+.map-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.map-btn:hover {
+    background-color: #45a049;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.file-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.legend {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.legend h3 {
+    margin-top: 0;
+}
+
+.legend p {
+    margin: 5px 0;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.line {
+    width: 20px;
+    height: 2px;
+    background-color: rgb(4, 4, 6);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* .polygon {
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    display: inline-block;
+    margin-right: 5px;
+} */
